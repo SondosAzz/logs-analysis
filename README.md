@@ -1,6 +1,6 @@
 # logs-analysis
 
-## About the project
+## About 
 this is project is a part of the Udacity Full Stack Web Developer Nanodegree Program. The project will interact with the database newsdata.sql and save the result into a file results.txt. code was written following on *PEP8 style guide*
 results file will contain answers of the following:
 * What are the most popular three articles of all time?
@@ -8,24 +8,25 @@ results file will contain answers of the following:
 * On which days did more than 1% of requests lead to errors?
 
 
-## How to run
+## To Run
 In  order to run this project you need:
 1.  make sure to have a virtual machine such as virtual box, Vagrant, Python2 and PostgreSQL
 2. Clone/download this repository 
 3. download the data [newsdata.sql](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
 
-## The database includes three tables:
+### The database includes three tables:
 
-*The authors table includes information about the authors of articles.
-*The articles table includes the articles themselves.
-*The log table includes one entry for each time a user has accessed the site.
+* The authors table includes information about the authors of articles.
+* The articles table includes the articles themselves.
+* The log table includes one entry for each time a user has accessed the site.
 
-## What is next?
+## What Is Next?
 1. cd to the directory and run ```vagrant up``` and ```vagrant ssh```
 2. load the data by running ```psql -d news -f newsdata.sql``` in the command line
 3. run the newsdb.py in the commandline using python ```newsdb.py```
 4. Python version will be printed in the command line and resutls.txt file will be updated. 
-## Views used
+
+## Views Used
 * sqltest view
 ```
 CREATE VIEW sqltest
