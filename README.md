@@ -10,7 +10,7 @@ results file will contain answers of the following:
 
 ## To Run
 In  order to run this project you need:
-1.  make sure to have a virtual machine such as virtual box, Vagrant, Python2 and PostgreSQL
+1.  make sure to install virtual machine such as virtual box, Vagrant, Python2 and PostgreSQL
 2. Clone/download this repository 
 3. download the data [newsdata.sql](https://d17h27t6h515a5.cloudfront.net/topher/2016/August/57b5f748_newsdata/newsdata.zip)
 
