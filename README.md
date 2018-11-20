@@ -28,7 +28,7 @@ In  order to run this project you need:
 
 ## Views Used
 * sqltest view
-```
+```sql
 CREATE VIEW sqltest
     as
     select name,count(path) as views
@@ -39,7 +39,7 @@ CREATE VIEW sqltest
     order by views desc;
   ```  
 * OKtable view
-```
+```sql
 CREATE VIEW OKtable
 as
 select  count(status) as Cok, to_char(log.time, 'Month,DD YYYY') as date
@@ -49,7 +49,7 @@ group by date
 order by date;
   ``` 
 * errortable view
-```
+```sql
 CREATE VIEW errortable
 as
 select  count(status) as Cerror, to_char(log.time, 'Month,DD YYYY') as date
@@ -59,9 +59,9 @@ group by date
 order by date;
   ```  
  * errorperc view
-```
- create view errorperc
- as
+```sql
+CREATE VIEW errorperc
+as
 select  oktable.date , Cerror /(Cerror + cok):: double precision* 100.0 as perc
 from oktable ,errortable
 where oktable.date = errortable.date;
