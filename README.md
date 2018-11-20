@@ -1,4 +1,4 @@
-# logs-analysis
+# Logs Analysis
 
 ## About 
 this is project is a part of the Udacity Full Stack Web Developer Nanodegree Program. The project will interact with the database newsdata.sql and save the result into a file results.txt. code was written following on *PEP8 style guide*
