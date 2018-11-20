@@ -16,14 +16,14 @@ In  order to run this project you need:
 
 ### The database includes three tables:
 
-* The authors table includes information about the authors of articles.
-* The articles table includes the articles themselves.
-* The log table includes one entry for each time a user has accessed the site.
+* The authors table.
+* The articles table.
+* The log table.
 
 ## What Is Next?
 1. cd to the directory and run ```vagrant up``` and ```vagrant ssh```
 2. load the data by running ```psql -d news -f newsdata.sql``` in the command line
-3. run the newsdb.py in the commandline using python ```newsdb.py```
+3. run the newsdb.py in the commandline using ```python newsdb.py```
 4. Python version will be printed in the command line and resutls.txt file will be updated. 
 
 ## Views Used
