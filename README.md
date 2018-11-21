@@ -27,9 +27,9 @@ In  order to run this project you need:
 4. Python version will be printed in the command line and resutls.txt file will be updated. 
 
 ## Views Used
-* sqltest view
+* viewstable view
 ```sql
-CREATE VIEW sqltest
+CREATE VIEW viewstable
     as
     select name,count(path) as views
     from authors, articles, log
