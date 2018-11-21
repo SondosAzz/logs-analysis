@@ -45,7 +45,7 @@ def Question2():
     db = psycopg2.connect(database=DBNAME)
     c = db.cursor()
     query = ("""select name , sum(views) as v
-    from sqltest
+    from viewstable
     group by name
     order by v desc;""")
     c.execute(query)
