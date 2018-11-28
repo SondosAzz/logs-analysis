@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+#!/usr/bin/env python
 import datetime
 import psycopg2
 import sys
@@ -12,7 +13,7 @@ question3 = "3. On which days did more than 1% of requests lead to errors?"
 
 
 def wfile(Question, result):
-    file = open("results.txt", "a+")
+    file = open("results.txt", "w")
     n = datetime.datetime.now()
     file.write(Question+"\n")
     for t in result:
